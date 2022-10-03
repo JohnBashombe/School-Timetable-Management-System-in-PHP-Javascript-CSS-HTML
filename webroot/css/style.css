@@ -1,0 +1,454 @@
+::-webkit-scrollbar {
+    width: 7px;
+	height: 5px;
+}  
+
+::-webkit-scrollbar-track {
+    background: #bcbcbc;
+    border-radius: 7px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: #848885;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #5c5f5d;
+}
+
+
+.btn-top{
+	border-radius: 15px;
+}
+
+.div-margins{
+	margin-top: 100px;
+}
+
+@media (min-width: 1px) and (max-width: 319px){
+	.text-small span{
+		font-size: 12px;
+	}
+}
+
+.padding-card{
+	padding: 0px 25px;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.text-black{
+	color: #000000;
+}
+
+@media(min-width:1px) and (max-width:768px){
+	.car-move{
+		width: 60px;
+		height: 60px;
+	}
+}
+
+.user_name_display{
+	text-align: center;
+	margin-top: 4px;
+}
+
+.customized-color{
+	background-color: #ffff;
+}
+
+.btn-hover:hover{
+	color: #ffffff;
+}
+
+.link-custom a{
+	text-decoration-line: none;
+	text-align: center;
+}
+
+.icon-modal{
+	font-size: 50px;
+}
+
+.link-class a{
+	text-decoration-line: none;
+	font-size: 12px;
+}
+
+.text-label label{
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.text-label input{
+	height: 30px;
+}
+
+.text-label span{
+	font-size: 13px;
+}
+
+.text-label a{
+	text-decoration-line: none;
+	font-size: 13px;
+	color: #5b7dff;
+	
+}
+
+.text-login{
+	color: #3b00ff;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.text-login:hover{
+	text-decoration-line: underline;
+}
+
+.btn-half{
+	width: 50%;
+	border-radius: 15px;
+}
+
+.card-credent{
+	padding: 25px 5px;
+}
+
+@media(min-width: 992px){
+	.resize{
+		width: 30%;
+		margin-left: 33%;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+	.resize{
+		width: 35%;
+		margin-left: 30%;
+	}
+}
+
+@media(min-width: 576px) and (max-width: 767px){
+	.resize{
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+@media(min-width: 1px) and (max-width: 575px){
+	.resize{
+		width: 100%;
+	}
+}
+
+.text-blue{
+	color: blue;
+}
+
+.text-min{
+	font-size: 13px;
+}
+
+@media(min-width: 1px) and (max-width : 369px){
+	.btn-smaller{
+		display: none;
+	}
+}
+
+.noti-num{
+	font-size: 18px;
+}
+
+.pad_mess{
+	padding: 10px;
+}
+
+.mytext h5{
+	font-size: 15px;
+}
+
+.mytext p{
+	font-size: 13px;
+}
+
+.mytext{
+	padding: 15px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+@media (min-width:1px) and (max-width:575px){
+	.carousel {
+	  height: 300px;
+	  margin-bottom: 60px;
+	}
+	
+	.carousel .item {
+	  height: 300px;
+	  background-color: #777;
+	}
+	.carousel-inner > .item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-width: 100%;
+	  height: 350px;
+	}
+}
+
+@media(min-width:1px) and (max-width:575px){
+	.hide-sm{
+		display: none;
+	}
+	.btn-little{
+		padding: .25rem .5rem;
+		font-size: .875rem;
+		line-height: 1.5;
+		border-radius: 15px;
+	}
+}
+
+.sidebar a{
+	text-decoration-line: none;
+}
+
+.sm-menu-con{
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+}
+
+@media (min-width:768px){
+	.sm-menu-con{
+		display: none;
+	}
+}
+
+
+.title{
+	font-weight: 200; 
+	line-height: 25px; 
+	font-size: 35px;
+}
+
+.card-padding{
+	padding-top: 50px; padding-bottom: 50px;
+	padding-left: 10px; padding-right: 10px;
+}
+
+@media (min-width: 1px) and (max-width: 320px){
+	.title{ 
+		line-height: 20px; 
+		font-size: 25px;
+	}
+	
+	.title-small{
+		line-height: 10px; 
+		font-size: 13px;
+	}
+}
+
+.title-small{
+	font-weight: 200; 
+	line-height: 15px; 
+	font-size: 18px;
+}
+
+.title-md{
+	font-weight: 200; 
+	line-height: 20px; 
+	font-size: 25px;
+}
+
+@media(min-width:1px) and (max-width:575px){
+	.hidden-xs{
+		display: none
+	}
+}
+
+@media(min-width:576px) and (max-width:767px){
+	.hidden-sm{
+		display: none
+	}
+}
+
+@media(min-width:768px) and (max-width:991px){
+	.hidden-md{
+		display: none
+	}
+}
+
+@media(min-width:992px) and (max-width:1199px){
+	.hidden-lg{
+		display: none
+	}
+}
+
+@media(min-width:1200px) {
+	.hidden-xl{
+		display: none
+	}
+}
+
+.img-size{
+	max-height: 350px;
+}
+
+.img-rounded{
+	border-radius: 50%;
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.icons img{
+	width: 20px;
+	height: 20px;
+}
+
+.div-marg-modal{
+	margin-top: 70px;
+}
+
+@media(min-width:1px) and (max-width:575.98px){
+	.terms{
+		font-size: 25px;
+		font-weight: 200;
+	}
+}
+
+@media(min-width:576px){
+	.terms{
+		font-size: 35px;
+		font-weight: 200;
+	}
+}
+
+.myForm input{
+	height: 35px;
+}
+
+.myForm label{
+	font-size: 14px;
+	color: #6c757d;
+}
+
+.padding-card-login{
+	padding: 25px 25px;
+}
+
+@media(min-width:1px) and (max-width: 767.98px){
+	.padding-card-login{
+		padding: 15px 15px;
+	}
+}
+
+.image-upload img{
+	width: 130px;
+	height: 130px;
+}
+
+@media (min-width:1px) and (max-width:767.98px){
+	.image-upload img{
+		width: 100px;
+		height: 100px;
+}
+}
+
+.admin-card-padding{
+	padding: 10px;
+}
+
+.table-responsive th{
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.table-responsive td{
+	font-size: 14px;
+	font-weight: 200;
+	color: black;
+}
+
+.admin-card-padding a{
+	text-decoration-line: none;
+}
+
+.btn-table{
+	border-radius: 15px;
+	width: 80%;
+	font-size: 12px;
+}
+
+.image-admin img{
+	width: 200px;
+	height: 200px;
+	padding-bottom: 15px;
+}
+
+.modal-button-padding{
+	padding: 20px;
+}
+
+.size-input-search input{
+	height: 30px;
+}
+
+.image-top img{
+	width: 100%;
+	height: 450px;
+}
+
+@media (min-width: 1px) and (max-width: 575px){
+	.image-top img{
+		height: 250px;
+	}
+}
+
+.paddings{
+	padding: 15px;
+}
+
+.tbl-custom table{
+	text-align: center;
+}
+
+.break b{
+	font-size: 25px;
+}
+
+.text-red{
+	color: red;
+}
+
+.form-group Select{
+	border-radius: 18px;
+}

@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="IUEA MAintenance Website">
+    <meta name="author" content="Bootlab">
+    <title>IUEA Time Table Management</title>
+    <link href="../webroot/css/app.css" rel="stylesheet">
+    <link href="../webroot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../webroot/css/offcanvas.css" rel="stylesheet">
+    <link href="../webroot/css/style.css" rel="stylesheet">
+    <link href="../webroot/css/empire-design.css" rel="stylesheet">
+    <link href="../webroot/css/my_Icons.css" rel="stylesheet">
+    <link href="../webroot/css/tabulation.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="d-flex">
+
+            <div class="main">
+
+                <nav class="navbar fixed-top navbar-dark customized-color">
+                    <a class="navbar-brand mr-auto mr-lg-0 text-small" href="home.php"><span
+                            class="text-red">TIME TABLE</span><span class="text-black"> MANAGEMENT</span></a>
+                </nav>
+
+                <main class="content">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+
+                                        <div class="card admin-card-padding manage_labels">
+                                            <div class="content">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <form method="POST" action="">
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label>Department</label>
+                                                                        <select name="" class="form-control custom-select">
+                                                                            <option>Select Department</option>
+                                                                            <option>Computer Science</option>
+                                                                            <option>Information Technology</option>
+                                                                        </select>
+                                                                        <div class="invalid-feedback">
+                                                                            Please Select a Department
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-5 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label>Semester</label>
+                                                                        <select name="" class="form-control custom-select">
+                                                                            <option>Select Semester</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                        <div class="invalid-feedback">
+                                                                            Please Select a Semester
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-12 text-right">
+                                                                    <div class="form-group">
+                                                                        <label>Option</label><br />
+                                                                        <button class="btn btn-outline-success">Load
+                                                                            Timetable</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                        </form>
+
+                                                        <form method="POST" action="">
+
+                                                            <div class="table-responsive table-margin">
+                                                                <table
+                                                                    class="table table-striped table-hover text-center">
+                                                                    <thead>
+                                                                        <th>Time</th>
+                                                                        <th>Monday</th>
+                                                                        <th>Tuesday</th>
+                                                                        <th>Wednesday</th>
+                                                                        <th>Thursday</th>
+                                                                        <th>Friday</th>
+                                                                        <th>Saturday</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td> 8-9:00 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m00"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m01"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt00"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt01"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w00"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w01"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t00"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t01"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f00"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f01"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s00"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s01"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> 9-10:0 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m10"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m11"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt10"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt11"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w10"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w11"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t10"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t11"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f10"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f11"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s10"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s11"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> 10-11:0 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m20"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m21"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt20"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt21"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w20"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w21"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t20"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t21"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f20"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f21"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s20"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s21"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> 11-12:0 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m30"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m31"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt30"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt31"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w30"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w31"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t30"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t31"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f30"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f31"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s30"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s31"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>310</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <table class="table bg-secondary break_manage">
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>B</td>
+                                                                            <td>R</td>
+                                                                            <td>E</td>
+                                                                            <td>A</td>
+                                                                            <td>K</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <table
+                                                                    class="table table-striped table-hover text-center">
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td> 1-2:00 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m40"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m41"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt40"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt41"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w40"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w41"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t40"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t41"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f40"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f41"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s40"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s41"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> 2-3:0 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m50"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m51"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt50"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt51"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w50"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w51"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t50"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t51"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f50"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f51"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s50"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s51"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> 3-4:0 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m60"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m61"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt60"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt61"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w60"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w61"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t60"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t61"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f60"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f61"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s60"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s61"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> 4-5:0 </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m70"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m71"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt70"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt71"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w70"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w71"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t70"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t71"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f70"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f71"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s70"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s71"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>5-6:00</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="m80"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="m81"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="tt80"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="tt81"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="w80"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="w81"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="t80"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="t81"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="f80"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="f81"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="s80"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>CSC111</option>
+                                                                                        <option>BIT250</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="form-group">
+                                                                                    <select name="s81"
+                                                                                        class="form-control input-sm">
+                                                                                        <option>304</option>
+                                                                                        <option>301</option>
+                                                                                    </select>
+                                                                                    <div class="invalid-feedback">
+                                                                                        Please Select a Semester
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </form>
+
+                                                        <div class="container-fluid">
+                                                            <br />
+                                                            <hr />
+                                                            <form class="needs-validation" novalidate="">
+                                                               
+                                                                <div class="row">
+                                                                    <div class="col-md-12 text-center">
+                                                                        <br />
+                                                                        <button class="btn btn-outline-secondary" name="generate">
+                                                                            Generate Timetable </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="card">
+                                            <div class="paddings">
+                                                <div class="content">
+
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <p class="title text-muted">Time table Generated</p>
+                                                        <p class="text-muted">Semester I Year 2</p><br />
+                                                        <div class="table-responsive tbl-custom">
+                                                            <table class="table table-striped table-hover">
+                                                                <thead>
+                                                                    <th>Time</th>
+                                                                    <th>Monday</th>
+                                                                    <th>Tuesday</th>
+                                                                    <th>Wednesday</th>
+                                                                    <th>Thursday</th>
+                                                                    <th>Friday</th>
+                                                                    <th>Saturday</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>08:00 - 09:00</td>
+                                                                        <td><b>CSC 1000</b><br />100</td>
+                                                                        <td><b>CSC 1200</b><br />101</td>
+                                                                        <td><b>CSC 1300</b><br />102</td>
+                                                                        <td><b>CSC 1400</b><br />103</td>
+                                                                        <td><b>CSC 1500</b><br />104</td>
+                                                                        <td><b>CSC 1600</b><br />105</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>09:00 - 10:00</td>
+                                                                        <td><b>CSC 1001</b><br />106</td>
+                                                                        <td><b>CSC 1202</b><br />107</td>
+                                                                        <td><b>CSC 1303</b><br />108</td>
+                                                                        <td><b>CSC 1404</b><br />109</td>
+                                                                        <td><b>CSC 1505</b><br />110</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>10:00 - 11:00</td>
+                                                                        <td><b>CSC 1000</b><br />100</td>
+                                                                        <td><b>CSC 1200</b><br />101</td>
+                                                                        <td><b>CSC 1300</b><br />102</td>
+                                                                        <td><b>CSC 1400</b><br />103</td>
+                                                                        <td><b>CSC 1500</b><br />104</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>11:00 - 12:00</td>
+                                                                        <td><b>CSC 1001</b><br />106</td>
+                                                                        <td><b>CSC 1202</b><br />107</td>
+                                                                        <td><b>CSC 1303</b><br />108</td>
+                                                                        <td><b>CSC 1404</b><br />109</td>
+                                                                        <td><b>CSC 1505</b><br />110</td>
+                                                                        <td><b>CSC 1606</b><br />111</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>12:00 - 01:00</td>
+                                                                        <td><b>CSC 1000</b><br />100</td>
+                                                                        <td><b>CSC 1200</b><br />101</td>
+                                                                        <td><b>CSC 1300</b><br />102</td>
+                                                                        <td><b>CSC 1400</b><br />103</td>
+                                                                        <td><b>CSC 1500</b><br />104</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr class="break">
+                                                                        <td>01:00 - 02:00</td>
+                                                                        <td></td>
+                                                                        <td><b>B</b></td>
+                                                                        <td><b>R</b></td>
+                                                                        <td><b>E</b></td>
+                                                                        <td><b>A</b></td>
+                                                                        <td><b>K</b></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>02:00 - 03:00</td>
+                                                                        <td><b>CSC 1000</b><br />100</td>
+                                                                        <td><b>CSC 1200</b><br />101</td>
+                                                                        <td><b>CSC 1300</b><br />102</td>
+                                                                        <td><b>CSC 1400</b><br />103</td>
+                                                                        <td><b>CSC 1500</b><br />104</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>03:00 - 04:00</td>
+                                                                        <td><b>CSC 1001</b><br />106</td>
+                                                                        <td><b>CSC 1202</b><br />107</td>
+                                                                        <td><b>CSC 1303</b><br />108</td>
+                                                                        <td><b>CSC 1404</b><br />109</td>
+                                                                        <td><b>CSC 1505</b><br />110</td>
+                                                                        <td><b>CSC 1606</b><br />111</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>04:00 - 05:00</td>
+                                                                        <td><b>CSC 1000</b><br />100</td>
+                                                                        <td><b>CSC 1200</b><br />101</td>
+                                                                        <td><b>CSC 1300</b><br />102</td>
+                                                                        <td><b>CSC 1400</b><br />103</td>
+                                                                        <td><b>CSC 1500</b><br />104</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>05:00 - 06:00</td>
+                                                                        <td><b>CSC 1001</b><br />106</td>
+                                                                        <td><b>CSC 1202</b><br />107</td>
+                                                                        <td><b>CSC 1303</b><br />108</td>
+                                                                        <td><b>CSC 1404</b><br />109</td>
+                                                                        <td><b>CSC 1505</b><br />110</td>
+                                                                        <td></td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+
+                                                            <div class="text-center">
+                                                                <hr />
+                                                                <button class="btn btn-sm btn-outline-secondary"
+                                                                    type="submit">Print Timetable</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card">
+
+                                            <div class="paddings">
+                                                <div class="content">
+                                                    <p class="title-small"><i class="nc-icon nc-key-25"></i>KEY</p>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12">
+
+                                                            <div class="table-responsive tbl-custom">
+                                                                <table class="table table-striped table-hover">
+                                                                    <thead>
+                                                                        <th>Course Code</th>
+                                                                        <th>Course Name</th>
+                                                                        <th>Course Lecturer</th>
+                                                                        <th>Course Unit</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>CSC 1000</td>
+                                                                            <td>Programming</td>
+                                                                            <td>Ntavigwa Bash.</td>
+                                                                            <td>4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>CSC 1001</td>
+                                                                            <td>Web Design</td>
+                                                                            <td>Bashombe</td>
+                                                                            <td>3</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row text-muted">
+                <div class="col-12 text-center">
+                    <p>
+                        <small>� 2019 - IUEA Time Table Management. All Right Reserved</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../webroot/js/app.js"></script>
+    <script src="../webroot/js/final_year.js"></script>
+    <script src="../webroot/js/jQuery.min.js"></script>
+    <script src="../webroot/js/bootstrap.min.js"></script>
+    <script src="../webroot/js/tabulation.js"></script>
+</body>
+
+</html>
